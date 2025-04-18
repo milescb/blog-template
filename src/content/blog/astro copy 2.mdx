@@ -9,6 +9,8 @@ tags:
 title: First Post
 ---
 
+import bookImage from '../../assets/images/book.jpg'
+
 # Title
 
 Text
@@ -16,7 +18,8 @@ Text
 ## Subtitle
 
 <figure>
-	<img src='/src/assets/images/book.jpg' alt='alt text' />
+	<img src={bookImage.src} alt='alt text' width={bookImage.width} height={bookImage.height} />{' '}
+	{/* <-- Use the imported image */}
 	<figcaption>Your caption here</figcaption>
 </figure>
 
